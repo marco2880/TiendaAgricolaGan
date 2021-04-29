@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterUser"
+    android:gravity="center"
+    android:background="@drawable/fondo_degradado"
+    >
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="120dp"
+       android:orientation="vertical"
+       android:gravity="center"
+       android:background="@drawable/boton_blanco"
+       >
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:src="@drawable/boton_blanco"           />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Registrese y Obtenga descuentos"
+           android:layout_marginVertical="10dp"
+           android:textSize="20sp"       />
+
+   </LinearLayout>
+
+
+
+
+
+
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:paddingTop="30dp"
+           android:gravity="center"
+           android:orientation="vertical"    >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:weightSum="2"
+               android:layout_marginHorizontal="30dp"
+
+
+               >
+               <EditText
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:hint="DNI"
+                   android:layout_weight="1"
+
+                   android:background="@drawable/boton_blanco"
+
+
+                   />
+               <EditText
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:hint="Celular"
+                   android:layout_weight="1"
+                   android:layout_marginStart="10dp"
+                   android:background="@drawable/boton_blanco"
+                   />
+           </LinearLayout>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginHorizontal="30dp"
+               android:orientation="vertical"
+
+
+               >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombres"
+                    android:background="@drawable/boton_blanco"
+                    android:padding="6dp"
+                    android:layout_marginTop="20dp"
+                    />
+
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="Apellidos"
+                   android:background="@drawable/boton_blanco"
+                   android:padding="6dp"
+                   android:layout_marginTop="20dp"
+                   />
+
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="Correo electrónico"
+                   android:background="@drawable/boton_blanco"
+                   android:padding="6dp"
+                   android:layout_marginTop="20dp"
+                   />
+
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="Direccion"
+                   android:background="@drawable/boton_blanco"
+                   android:padding="6dp"
+                   android:layout_marginTop="20dp"
+                   />
+
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="Usuario"
+                   android:background="@drawable/boton_blanco"
+                   android:padding="6dp"
+                   android:layout_marginTop="20dp"
+                   />
+
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="Contraseña"
+                   android:background="@drawable/boton_blanco"
+                   android:padding="6dp"
+                   android:layout_marginTop="20dp"
+                   />
+
+
+                <Button
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Registrar"
+                    android:textAllCaps="false"
+                    android:layout_marginHorizontal="80dp"
+                    android:background="@drawable/boton_naraja"
+                    android:layout_marginTop="30dp"
+                    />
+
+           </LinearLayout>
+
+
+
+
+
+
+
+
+   </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
