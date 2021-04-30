@@ -16,22 +16,24 @@
        android:layout_height="120dp"
        android:orientation="vertical"
        android:gravity="center"
-       android:background="@drawable/boton_blanco"
+
        >
        <ImageView
            android:layout_width="match_parent"
-           android:layout_height="60dp"
-           android:src="@drawable/boton_blanco"           />
+           android:layout_height="90dp"
+           android:src="@drawable/logoselecta"
+
+
+           />
 
        <TextView
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:text="Registrese y Obtenga descuentos"
-           android:layout_marginVertical="10dp"
+           android:text="Bienvenido"
+           android:layout_marginVertical="2dp"
            android:textSize="20sp"       />
 
    </LinearLayout>
-
 
 
 
@@ -44,33 +46,46 @@
            android:layout_height="wrap_content"
            android:paddingTop="30dp"
            android:gravity="center"
+           android:layout_marginTop="20dp"
            android:orientation="vertical"    >
+
            <LinearLayout
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:weightSum="2"
-               android:layout_marginHorizontal="30dp"
-
-
-               >
-               <EditText
-                   android:layout_width="wrap_content"
+               android:layout_marginHorizontal="30dp">
+               <com.google.android.material.textfield.TextInputLayout
+                   android:layout_width="match_parent"
                    android:layout_height="wrap_content"
-                   android:hint="DNI"
-                   android:layout_weight="1"
-
-                   android:background="@drawable/boton_blanco"
-
-
-                   />
-               <EditText
-                   android:layout_width="wrap_content"
+                   android:layout_weight="1">
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="35dp"
+                       android:textSize="15sp"
+                       android:hint="DNI"
+                       android:paddingHorizontal="10dp"
+                       android:layout_weight="1"
+                       android:background="@drawable/boton_blanco"     >
+                   </com.google.android.material.textfield.TextInputEditText>
+               </com.google.android.material.textfield.TextInputLayout>
+               <com.google.android.material.textfield.TextInputLayout
+                   android:layout_width="match_parent"
                    android:layout_height="wrap_content"
-                   android:hint="Celular"
-                   android:layout_weight="1"
-                   android:layout_marginStart="10dp"
-                   android:background="@drawable/boton_blanco"
-                   />
+                   android:layout_weight="1">
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="35dp"
+                       android:textSize="15sp"
+                       android:hint="Celular"
+
+                       android:layout_weight="1"
+                       android:layout_marginStart="10dp"
+                       android:paddingHorizontal="10dp"
+                       android:background="@drawable/boton_blanco">
+               </com.google.android.material.textfield.TextInputEditText>
+               </com.google.android.material.textfield.TextInputLayout>
+
+
            </LinearLayout>
 
 
@@ -79,74 +94,143 @@
                android:layout_height="wrap_content"
                android:layout_marginHorizontal="30dp"
                android:orientation="vertical"
+               android:layout_marginBottom="50dp"
+               android:paddingVertical="8dp"
 
 
                >
-                <EditText
+
+
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingVertical="8dp"
+                   >
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="35dp"
+                       android:textSize="15sp"
+
+                       android:hint="Nombres"
+                       android:background="@drawable/boton_blanco"
+                       android:padding="6dp"
+                       android:layout_marginTop="20dp"
+                       android:paddingHorizontal="10dp"
+                       >
+                   </com.google.android.material.textfield.TextInputEditText>
+               </com.google.android.material.textfield.TextInputLayout>
+
+
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingVertical="8dp">
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="35dp"
+                       android:textSize="15sp"
+                       android:hint="Apellidos"
+                       android:background="@drawable/boton_blanco"
+                       android:padding="6dp"
+                       android:layout_marginTop="20dp"/>
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingVertical="8dp"
+                   >
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="35dp"
+                       android:textSize="15sp"
+                       android:hint="Correo electrónico"
+                       android:background="@drawable/boton_blanco"
+                       android:padding="6dp"
+                       android:layout_marginTop="20dp"/>
+
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Nombres"
-                    android:background="@drawable/boton_blanco"
-                    android:padding="6dp"
-                    android:layout_marginTop="20dp"
-                    />
+                    android:paddingVertical="8dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textSize="15sp"
+                        android:hint="Direccion"
+                        android:background="@drawable/boton_blanco"
+                        android:padding="6dp"
+                        android:layout_marginTop="20dp"
+                        />
 
-               <EditText
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="8dp"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textSize="15sp"
+                        android:hint="Usuario"
+                        android:background="@drawable/boton_blanco"
+                        android:padding="6dp"
+                        android:layout_marginTop="20dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+               <com.google.android.material.textfield.TextInputLayout
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content"
-                   android:hint="Apellidos"
-                   android:background="@drawable/boton_blanco"
-                   android:padding="6dp"
-                   android:layout_marginTop="20dp"
-                   />
-
-               <EditText
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:hint="Correo electrónico"
-                   android:background="@drawable/boton_blanco"
-                   android:padding="6dp"
-                   android:layout_marginTop="20dp"
-                   />
-
-               <EditText
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:hint="Direccion"
-                   android:background="@drawable/boton_blanco"
-                   android:padding="6dp"
-                   android:layout_marginTop="20dp"
-                   />
-
-               <EditText
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:hint="Usuario"
-                   android:background="@drawable/boton_blanco"
-                   android:padding="6dp"
-                   android:layout_marginTop="20dp"
-                   />
-
-               <EditText
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:hint="Contraseña"
-                   android:background="@drawable/boton_blanco"
-                   android:padding="6dp"
-                   android:layout_marginTop="20dp"
-                   />
+                   android:paddingVertical="8dp"
+                   >
+                   <com.google.android.material.textfield.TextInputLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       >
+                       <com.google.android.material.textfield.TextInputEditText
+                           android:layout_width="match_parent"
+                           android:layout_height="35dp"
+                           android:textSize="15sp"
+                           android:hint="Contraseña"
+                           android:background="@drawable/boton_blanco"
+                           android:padding="6dp"
+                           android:layout_marginTop="20dp"/>
 
 
-                <Button
+                   </com.google.android.material.textfield.TextInputLayout>
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+               <Button
 
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:text="Registrar"
+                    android:text="btnRegistrar"
                     android:textAllCaps="false"
                     android:layout_marginHorizontal="80dp"
                     android:background="@drawable/boton_naraja"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="20dp"
+
                     />
+
+
 
            </LinearLayout>
 

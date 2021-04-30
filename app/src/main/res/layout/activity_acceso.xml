@@ -32,6 +32,7 @@
             android:textSize="35sp"
             android:textColor="#009688"
 
+
         />
 
         <ImageView
@@ -43,21 +44,34 @@
 
             />
 
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Usuario"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Usuario"
 
-            android:inputType="textEmailAddress"
+                android:inputType="textEmailAddress"
+                />
 
+        </com.google.android.material.textfield.TextInputLayout>
 
-            />
-
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
-            android:inputType="textPassword" />
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
 
 
         <LinearLayout
@@ -98,6 +112,7 @@
 
                     />
                 <TextView
+                    android:id="@+id/ayuda"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="ayuda"
@@ -105,6 +120,8 @@
                     android:fontFamily="serif"
                     android:textAlignment="textEnd"
                     android:textStyle="bold"
+
+
 
                     />
             </LinearLayout>
@@ -140,6 +157,7 @@
     android:layout_marginTop="30dp"
     >
     <TextView
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="No tengo cuenta,   "
@@ -151,11 +169,11 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:id="@id/editText"
+        android:id="@+id/registro_acceso"
         android:layout_height="wrap_content"
         android:text="registrarme"
         android:textStyle="bold"
-        android:onClick="sendMessage"
+
 
 
         android:textColor="#ffffff" />

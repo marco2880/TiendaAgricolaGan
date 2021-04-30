@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CategoriasActivity">
+    tools:context=".CategoriasActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.sinaseyfi.advancedcardview.AdvancedCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:shadow0_Outer_Color="#0E0101"
+        app:shadow1_Outer_Distance="20dp"
+        app:shadow0_Outer_Blur="20dp"
+
+        >
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+
+
+
+            android:src="@drawable/fondo_degradado"
+
+
+
+            />
+
+    </com.sinaseyfi.advancedcardview.AdvancedCardView>
+
+
+</LinearLayout>
